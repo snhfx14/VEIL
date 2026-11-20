@@ -1,0 +1,626 @@
+[2026-11-20T09:01:59.300Z] [INFO] relay.startup port=9001 mcpClientPort=9002 editorPid=3604
+[2026-11-20T09:01:59.306Z] [INFO] log === RELAY SERVER STARTED === (unity-ai-relay v1.0.12-build.100)
+[2026-11-20T09:01:59.343Z] [INFO] log TLS trust: NODE_USE_SYSTEM_CA=on systemCAs=109 bundledCAs=118
+[2026-11-20T09:01:59.344Z] [INFO] log Starting relay server...
+[2026-11-20T09:01:59.344Z] [INFO] log Command line arguments: ["bun","B:/~BUN/root/relay_win.exe","--relay","--port","9001","--mcp-client-port","9002","--editor-pid","3604","--shutdown-delay","180","--log-dir","C:\\Users\\ences\\Documents\\aula2011\\Logs"]
+[2026-11-20T09:01:59.345Z] [INFO] log Parsed config: {"port":9001,"mcpClientPort":9002,"editorPid":"3604","shutdownDelaySeconds":180}
+[2026-11-20T09:01:59.346Z] [INFO] log Initializing relay components...
+[2026-11-20T09:01:59.346Z] [INFO] log Creating RelayEditor...
+[2026-11-20T09:01:59.365Z] [INFO] log WebSocket server started
+[2026-11-20T09:01:59.366Z] [INFO] log Relay server initialization completed
+[2026-11-20T09:01:59.366Z] [INFO] log MCP Client initialized at port: 9002
+[2026-11-20T09:01:59.372Z] [WARN] log [shell-env] Shell environment did not contain a PATH variable
+[2026-11-20T09:01:59.376Z] [INFO] log Unity MCP Relay server started | Port: 9002 | Endpoints: /mcp/start-server, /mcp/stop-server, /mcp/server-status, /mcp/call-tool
+[2026-11-20T09:01:59.519Z] [INFO] log Unity client connected with ID: editor-3604-p9b9w6 (relay 1.0.12-build.100)
+[2026-11-20T09:01:59.520Z] [INFO] connection.established clientId=editor-3604-p9b9w6 port=9001
+[2026-11-20T09:02:20.472Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:02:20.497Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:02:20.669Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:02:20.672Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:02:20.690Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:02:20.691Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:02:29.526Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:02:29.525Z] [INFO] log Domain reload signal received from client editor-3604-p9b9w6
+[2026-11-20T09:02:29.527Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:02:29.544Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:02:29.546Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:02:29.546Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:02:29.547Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:02:29.548Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:02:29.551Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:02:37.112Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:02:37.112Z] [INFO] log Unity client connected with ID: editor-3604-clo4e8 (relay 1.0.12-build.100)
+[2026-11-20T09:02:37.113Z] [INFO] connection.established clientId=editor-3604-clo4e8 port=9001
+[2026-11-20T09:02:39.828Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:02:39.852Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:02:39.990Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:02:39.992Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:02:40.011Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:02:40.012Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:03:34.859Z] [INFO] log Domain reload signal received from client editor-3604-clo4e8
+[2026-11-20T09:03:34.860Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:03:34.861Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:03:34.871Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:03:34.871Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:03:34.872Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:03:34.872Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:03:34.873Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:03:34.873Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:03:45.507Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:03:45.507Z] [INFO] log Unity client connected with ID: editor-3604-a1hhyk (relay 1.0.12-build.100)
+[2026-11-20T09:03:45.508Z] [INFO] connection.established clientId=editor-3604-a1hhyk port=9001
+[2026-11-20T09:03:47.903Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:03:47.935Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:03:48.094Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:03:48.103Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:03:48.131Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:03:48.132Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:12:05.839Z] [INFO] log Domain reload signal received from client editor-3604-a1hhyk
+[2026-11-20T09:12:05.844Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:12:05.845Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:12:05.938Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:12:05.938Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:12:05.939Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:12:05.939Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:12:05.940Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:12:05.940Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:12:43.241Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:12:43.241Z] [INFO] log Unity client connected with ID: editor-3604-4lv47o (relay 1.0.12-build.100)
+[2026-11-20T09:12:43.241Z] [INFO] connection.established clientId=editor-3604-4lv47o port=9001
+[2026-11-20T09:12:44.757Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:12:44.776Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:12:44.883Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:12:44.885Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:12:44.903Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:12:44.904Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:13:23.800Z] [INFO] log Domain reload signal received from client editor-3604-4lv47o
+[2026-11-20T09:13:23.801Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:13:23.801Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:13:23.814Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:13:23.815Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:13:23.813Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:13:23.815Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:13:23.818Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:13:23.817Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:13:30.349Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:13:30.349Z] [INFO] log Unity client connected with ID: editor-3604-ivhi9u (relay 1.0.12-build.100)
+[2026-11-20T09:13:30.350Z] [INFO] connection.established clientId=editor-3604-ivhi9u port=9001
+[2026-11-20T09:13:32.000Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:13:32.021Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:13:32.129Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:13:32.131Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:13:32.149Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:13:32.149Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:21:40.392Z] [INFO] log Domain reload signal received from client editor-3604-ivhi9u
+[2026-11-20T09:21:40.393Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:21:40.393Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:21:40.405Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:21:40.405Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:21:40.407Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:21:40.404Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:21:40.409Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:21:40.410Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:21:47.975Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:21:47.975Z] [INFO] log Unity client connected with ID: editor-3604-9p6061 (relay 1.0.12-build.100)
+[2026-11-20T09:21:47.976Z] [INFO] connection.established clientId=editor-3604-9p6061 port=9001
+[2026-11-20T09:21:50.639Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:21:50.664Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:21:50.773Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:21:50.774Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:21:50.790Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:21:50.790Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:22:22.917Z] [INFO] log Domain reload signal received from client editor-3604-9p6061
+[2026-11-20T09:22:22.918Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:22:22.919Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:22:22.928Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:22:22.929Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:22:22.929Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:22:22.930Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:22:22.930Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:22:22.931Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:22:32.457Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:22:32.458Z] [INFO] log Unity client connected with ID: editor-3604-zk6e6h (relay 1.0.12-build.100)
+[2026-11-20T09:22:32.458Z] [INFO] connection.established clientId=editor-3604-zk6e6h port=9001
+[2026-11-20T09:22:32.584Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:22:32.610Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:22:32.724Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:22:32.725Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:22:32.744Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:22:32.745Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:23:57.626Z] [INFO] log Domain reload signal received from client editor-3604-zk6e6h
+[2026-11-20T09:23:57.627Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:23:57.628Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:23:57.636Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:23:57.636Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:23:57.637Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:23:57.637Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:23:57.638Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:23:57.638Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:24:06.046Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:24:06.046Z] [INFO] log Unity client connected with ID: editor-3604-mhpjz3 (relay 1.0.12-build.100)
+[2026-11-20T09:24:06.047Z] [INFO] connection.established clientId=editor-3604-mhpjz3 port=9001
+[2026-11-20T09:24:06.162Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:24:06.190Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:24:06.330Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:24:06.333Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:24:06.349Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:24:06.350Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:24:29.153Z] [INFO] log Domain reload signal received from client editor-3604-mhpjz3
+[2026-11-20T09:24:29.154Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:24:29.154Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:24:29.164Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:24:29.165Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:24:29.165Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:24:29.166Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:24:29.166Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:24:29.167Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:24:36.446Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:24:36.447Z] [INFO] log Unity client connected with ID: editor-3604-cg9eac (relay 1.0.12-build.100)
+[2026-11-20T09:24:36.447Z] [INFO] connection.established clientId=editor-3604-cg9eac port=9001
+[2026-11-20T09:24:36.543Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:24:36.559Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:24:36.663Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:24:36.663Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:24:36.679Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:24:36.680Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:25:19.208Z] [INFO] log Domain reload signal received from client editor-3604-cg9eac
+[2026-11-20T09:25:19.209Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:25:19.209Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:25:19.218Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:25:19.219Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:25:19.220Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:25:19.220Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:25:19.220Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:25:19.221Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:25:26.680Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:25:26.681Z] [INFO] log Unity client connected with ID: editor-3604-q33bs7 (relay 1.0.12-build.100)
+[2026-11-20T09:25:26.681Z] [INFO] connection.established clientId=editor-3604-q33bs7 port=9001
+[2026-11-20T09:25:26.773Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:25:26.789Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:25:26.892Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:25:26.893Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:25:26.908Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:25:26.908Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:26:59.926Z] [INFO] log Domain reload signal received from client editor-3604-q33bs7
+[2026-11-20T09:26:59.926Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:26:59.927Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:26:59.938Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:26:59.938Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:26:59.937Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:26:59.938Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:26:59.937Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:26:59.938Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:27:06.103Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:27:06.103Z] [INFO] log Unity client connected with ID: editor-3604-mtawk0 (relay 1.0.12-build.100)
+[2026-11-20T09:27:06.104Z] [INFO] connection.established clientId=editor-3604-mtawk0 port=9001
+[2026-11-20T09:27:07.529Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:27:07.540Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:27:07.654Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:27:07.655Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:27:07.667Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:27:07.668Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:27:09.182Z] [INFO] log Domain reload signal received from client editor-3604-mtawk0
+[2026-11-20T09:27:09.182Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:27:09.183Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:27:09.191Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:27:09.192Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:27:09.192Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:27:09.193Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:27:09.193Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:27:09.193Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:27:16.418Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:27:16.419Z] [INFO] log Unity client connected with ID: editor-3604-ho3qe2 (relay 1.0.12-build.100)
+[2026-11-20T09:27:16.419Z] [INFO] connection.established clientId=editor-3604-ho3qe2 port=9001
+[2026-11-20T09:27:16.575Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:27:16.591Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:27:16.696Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:27:16.697Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:27:16.711Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:27:16.711Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:27:33.133Z] [INFO] log Domain reload signal received from client editor-3604-ho3qe2
+[2026-11-20T09:27:33.133Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:27:33.134Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:27:33.146Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:27:33.147Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:27:33.147Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:27:33.148Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:27:33.148Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:27:33.149Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:27:40.561Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:27:40.561Z] [INFO] log Unity client connected with ID: editor-3604-j360uo (relay 1.0.12-build.100)
+[2026-11-20T09:27:40.562Z] [INFO] connection.established clientId=editor-3604-j360uo port=9001
+[2026-11-20T09:27:40.679Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:27:40.694Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:27:40.811Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:27:40.812Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:27:40.830Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:27:40.831Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:38:19.421Z] [INFO] log Domain reload signal received from client editor-3604-j360uo
+[2026-11-20T09:38:19.423Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:38:19.423Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:38:19.436Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:38:19.437Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:38:19.437Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:38:19.438Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:38:19.438Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:38:19.438Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:38:44.981Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:38:44.982Z] [INFO] log Unity client connected with ID: editor-3604-6xyihx (relay 1.0.12-build.100)
+[2026-11-20T09:38:44.982Z] [INFO] connection.established clientId=editor-3604-6xyihx port=9001
+[2026-11-20T09:38:47.217Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:38:47.236Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:38:47.362Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:38:47.363Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:38:47.381Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:38:47.381Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:39:01.704Z] [INFO] log Domain reload signal received from client editor-3604-6xyihx
+[2026-11-20T09:39:01.705Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:39:01.705Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:39:01.714Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:39:01.715Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:39:01.715Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:39:01.716Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:39:01.716Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:39:01.717Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:39:09.597Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:39:09.598Z] [INFO] log Unity client connected with ID: editor-3604-o6ukhi (relay 1.0.12-build.100)
+[2026-11-20T09:39:09.598Z] [INFO] connection.established clientId=editor-3604-o6ukhi port=9001
+[2026-11-20T09:39:09.746Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:39:09.759Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:39:09.881Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:39:09.882Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:39:09.896Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:39:09.897Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:56:34.857Z] [INFO] log Domain reload signal received from client editor-3604-o6ukhi
+[2026-11-20T09:56:34.859Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:56:34.859Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:56:34.876Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:56:34.877Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:56:34.877Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:56:34.877Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:56:34.878Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:56:34.876Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:56:42.626Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:56:42.627Z] [INFO] log Unity client connected with ID: editor-3604-cbuirr (relay 1.0.12-build.100)
+[2026-11-20T09:56:42.627Z] [INFO] connection.established clientId=editor-3604-cbuirr port=9001
+[2026-11-20T09:56:44.240Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:56:44.257Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:56:44.357Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:56:44.358Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:56:44.374Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:56:44.374Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:56:52.032Z] [INFO] log Domain reload signal received from client editor-3604-cbuirr
+[2026-11-20T09:56:52.033Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:56:52.033Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:56:52.043Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:56:52.044Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:56:52.044Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:56:52.044Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:56:52.045Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:56:52.046Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:56:59.122Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:56:59.123Z] [INFO] log Unity client connected with ID: editor-3604-7j3j2e (relay 1.0.12-build.100)
+[2026-11-20T09:56:59.123Z] [INFO] connection.established clientId=editor-3604-7j3j2e port=9001
+[2026-11-20T09:56:59.217Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:56:59.230Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:56:59.316Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:56:59.317Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:56:59.328Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:56:59.329Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:57:07.177Z] [INFO] log Domain reload signal received from client editor-3604-7j3j2e
+[2026-11-20T09:57:07.178Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:57:07.178Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:57:07.186Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:57:07.186Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:57:07.186Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:57:07.187Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:57:07.187Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:57:07.188Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:57:14.506Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:57:14.506Z] [INFO] log Unity client connected with ID: editor-3604-vo0skd (relay 1.0.12-build.100)
+[2026-11-20T09:57:14.506Z] [INFO] connection.established clientId=editor-3604-vo0skd port=9001
+[2026-11-20T09:57:14.601Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:57:14.616Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:57:14.720Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:57:14.721Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:57:14.737Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:57:14.737Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T09:59:05.877Z] [INFO] log Domain reload signal received from client editor-3604-vo0skd
+[2026-11-20T09:59:05.877Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:59:05.878Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:59:05.885Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T09:59:05.885Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T09:59:05.886Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T09:59:05.886Z] [WARN] connection.lost clientId=null
+[2026-11-20T09:59:05.886Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T09:59:05.887Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T09:59:13.299Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T09:59:13.299Z] [INFO] log Unity client connected with ID: editor-3604-mzdcu0 (relay 1.0.12-build.100)
+[2026-11-20T09:59:13.299Z] [INFO] connection.established clientId=editor-3604-mzdcu0 port=9001
+[2026-11-20T09:59:13.404Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T09:59:13.418Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T09:59:13.519Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T09:59:13.519Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T09:59:13.532Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T09:59:13.532Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:19:37.636Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:19:37.627Z] [INFO] log Domain reload signal received from client editor-3604-mzdcu0
+[2026-11-20T10:19:37.637Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:19:37.754Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:19:37.754Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:19:37.755Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:19:37.755Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:19:37.757Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:19:37.759Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:20:37.146Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:20:37.147Z] [INFO] log Unity client connected with ID: editor-3604-b7aopu (relay 1.0.12-build.100)
+[2026-11-20T10:20:37.148Z] [INFO] connection.established clientId=editor-3604-b7aopu port=9001
+[2026-11-20T10:20:39.972Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:20:40.026Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:20:40.187Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:20:40.195Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:20:40.214Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:20:40.214Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:20:56.479Z] [INFO] log Domain reload signal received from client editor-3604-b7aopu
+[2026-11-20T10:20:56.480Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:20:56.480Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:20:56.488Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:20:56.489Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:20:56.489Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:20:56.491Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:20:56.491Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:20:56.492Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:21:05.787Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:21:05.787Z] [INFO] log Unity client connected with ID: editor-3604-c4js4h (relay 1.0.12-build.100)
+[2026-11-20T10:21:05.789Z] [INFO] connection.established clientId=editor-3604-c4js4h port=9001
+[2026-11-20T10:21:05.892Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:21:05.906Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:21:06.010Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:21:06.010Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:21:06.021Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:21:06.022Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:37:00.055Z] [INFO] log Domain reload signal received from client editor-3604-c4js4h
+[2026-11-20T10:37:00.057Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:37:00.058Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:37:00.081Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:37:00.081Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:37:00.082Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:37:00.082Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:37:00.082Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:37:00.083Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:37:14.873Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:37:14.874Z] [INFO] log Unity client connected with ID: editor-3604-kagg7n (relay 1.0.12-build.100)
+[2026-11-20T10:37:14.874Z] [INFO] connection.established clientId=editor-3604-kagg7n port=9001
+[2026-11-20T10:37:17.091Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:37:17.107Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:37:17.211Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:37:17.211Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:37:17.226Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:37:17.227Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:37:24.646Z] [INFO] log Domain reload signal received from client editor-3604-kagg7n
+[2026-11-20T10:37:24.646Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:37:24.647Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:37:24.655Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:37:24.655Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:37:24.656Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:37:24.656Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:37:24.657Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:37:24.657Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:37:32.512Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:37:32.513Z] [INFO] log Unity client connected with ID: editor-3604-bjgasl (relay 1.0.12-build.100)
+[2026-11-20T10:37:32.513Z] [INFO] connection.established clientId=editor-3604-bjgasl port=9001
+[2026-11-20T10:37:32.617Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:37:32.630Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:37:32.726Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:37:32.727Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:37:32.740Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:37:32.740Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:41:08.561Z] [INFO] log Domain reload signal received from client editor-3604-bjgasl
+[2026-11-20T10:41:08.562Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:41:08.563Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:41:08.622Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:41:08.627Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:41:08.637Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:41:08.642Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:41:08.645Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:41:08.661Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:41:17.749Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:41:17.749Z] [INFO] log Unity client connected with ID: editor-3604-85dvmr (relay 1.0.12-build.100)
+[2026-11-20T10:41:17.750Z] [INFO] connection.established clientId=editor-3604-85dvmr port=9001
+[2026-11-20T10:41:19.486Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:41:19.510Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:41:19.618Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:41:19.619Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:41:19.638Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:41:19.639Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:51:49.057Z] [INFO] log Domain reload signal received from client editor-3604-85dvmr
+[2026-11-20T10:51:49.058Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:51:49.059Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:51:49.087Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T10:51:49.088Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T10:51:49.088Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T10:51:49.089Z] [WARN] connection.lost clientId=null
+[2026-11-20T10:51:49.089Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T10:51:49.090Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T10:52:20.832Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T10:52:20.833Z] [INFO] log Unity client connected with ID: editor-3604-9hpb2j (relay 1.0.12-build.100)
+[2026-11-20T10:52:20.833Z] [INFO] connection.established clientId=editor-3604-9hpb2j port=9001
+[2026-11-20T10:52:22.744Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T10:52:22.767Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T10:52:22.884Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T10:52:22.885Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T10:52:22.904Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T10:52:22.905Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T10:59:55.603Z] [INFO] log Shutdown request received from client editor-3604-9hpb2j
+[2026-11-20T10:59:55.604Z] [INFO] log Unity client requested immediate shutdown - shutting down now, reason: Shutdown requested by client
+[2026-11-20T10:59:55.611Z] [INFO] log Shutdown: Initiating graceful shutdown: Shutdown requested by client
+[2026-11-20T11:26:22.093Z] [INFO] log === RELAY SERVER STARTED === (unity-ai-relay v1.0.12-build.100)
+[2026-11-20T11:26:22.088Z] [INFO] relay.startup port=9001 mcpClientPort=9002 editorPid=43712
+[2026-11-20T11:26:22.127Z] [INFO] log TLS trust: NODE_USE_SYSTEM_CA=on systemCAs=109 bundledCAs=118
+[2026-11-20T11:26:22.128Z] [INFO] log Starting relay server...
+[2026-11-20T11:26:22.129Z] [INFO] log Command line arguments: ["bun","B:/~BUN/root/relay_win.exe","--relay","--port","9001","--mcp-client-port","9002","--editor-pid","43712","--shutdown-delay","180","--log-dir","C:\\Users\\ences\\Documents\\aula2011\\Logs"]
+[2026-11-20T11:26:22.129Z] [INFO] log Parsed config: {"port":9001,"mcpClientPort":9002,"editorPid":"43712","shutdownDelaySeconds":180}
+[2026-11-20T11:26:22.130Z] [INFO] log Initializing relay components...
+[2026-11-20T11:26:22.130Z] [INFO] log Creating RelayEditor...
+[2026-11-20T11:26:22.148Z] [INFO] log WebSocket server started
+[2026-11-20T11:26:22.149Z] [INFO] log Relay server initialization completed
+[2026-11-20T11:26:22.149Z] [INFO] log MCP Client initialized at port: 9002
+[2026-11-20T11:26:22.156Z] [WARN] log [shell-env] Shell environment did not contain a PATH variable
+[2026-11-20T11:26:22.160Z] [INFO] log Unity MCP Relay server started | Port: 9002 | Endpoints: /mcp/start-server, /mcp/stop-server, /mcp/server-status, /mcp/call-tool
+[2026-11-20T11:26:22.219Z] [INFO] log Unity client connected with ID: editor-43712-ew7gtx (relay 1.0.12-build.100)
+[2026-11-20T11:26:22.220Z] [INFO] connection.established clientId=editor-43712-ew7gtx port=9001
+[2026-11-20T11:26:22.277Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T11:26:22.297Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T11:26:22.422Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T11:26:22.425Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T11:26:22.439Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T11:26:22.440Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T11:34:40.689Z] [INFO] log Domain reload signal received from client editor-43712-ew7gtx
+[2026-11-20T11:34:40.691Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T11:34:40.692Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T11:34:40.719Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T11:34:40.720Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T11:34:40.720Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T11:34:40.721Z] [WARN] connection.lost clientId=null
+[2026-11-20T11:34:40.723Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T11:34:40.724Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T11:34:56.217Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T11:34:56.217Z] [INFO] log Unity client connected with ID: editor-43712-ato65t (relay 1.0.12-build.100)
+[2026-11-20T11:34:56.218Z] [INFO] connection.established clientId=editor-43712-ato65t port=9001
+[2026-11-20T11:34:58.407Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T11:34:58.434Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T11:34:58.545Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T11:34:58.546Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T11:34:58.562Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T11:34:58.563Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T11:35:24.211Z] [INFO] log Domain reload signal received from client editor-43712-ato65t
+[2026-11-20T11:35:24.211Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T11:35:24.212Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T11:35:24.223Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T11:35:24.223Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T11:35:24.224Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T11:35:24.224Z] [WARN] connection.lost clientId=null
+[2026-11-20T11:35:24.225Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T11:35:24.225Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T11:35:32.402Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T11:35:32.402Z] [INFO] log Unity client connected with ID: editor-43712-1gki8r (relay 1.0.12-build.100)
+[2026-11-20T11:35:32.403Z] [INFO] connection.established clientId=editor-43712-1gki8r port=9001
+[2026-11-20T11:35:32.678Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T11:35:32.699Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T11:35:32.834Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T11:35:32.837Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T11:35:32.858Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T11:35:32.860Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T11:38:33.715Z] [INFO] log Shutdown request received from client editor-43712-1gki8r
+[2026-11-20T11:38:33.716Z] [INFO] log Unity client requested immediate shutdown - shutting down now, reason: Shutdown requested by client
+[2026-11-20T11:38:33.717Z] [INFO] log Shutdown: Initiating graceful shutdown: Shutdown requested by client
+[2026-11-20T11:40:32.555Z] [INFO] relay.startup port=9001 mcpClientPort=9002 editorPid=29520
+[2026-11-20T11:40:32.556Z] [INFO] log === RELAY SERVER STARTED === (unity-ai-relay v1.0.12-build.100)
+[2026-11-20T11:40:32.573Z] [INFO] log TLS trust: NODE_USE_SYSTEM_CA=on systemCAs=109 bundledCAs=118
+[2026-11-20T11:40:32.573Z] [INFO] log Starting relay server...
+[2026-11-20T11:40:32.574Z] [INFO] log Command line arguments: ["bun","B:/~BUN/root/relay_win.exe","--relay","--port","9001","--mcp-client-port","9002","--editor-pid","29520","--shutdown-delay","180","--log-dir","C:\\Users\\ences\\Documents\\aula2011\\Logs"]
+[2026-11-20T11:40:32.574Z] [INFO] log Parsed config: {"port":9001,"mcpClientPort":9002,"editorPid":"29520","shutdownDelaySeconds":180}
+[2026-11-20T11:40:32.575Z] [INFO] log Initializing relay components...
+[2026-11-20T11:40:32.576Z] [INFO] log Creating RelayEditor...
+[2026-11-20T11:40:32.583Z] [INFO] log WebSocket server started
+[2026-11-20T11:40:32.586Z] [INFO] log Relay server initialization completed
+[2026-11-20T11:40:32.586Z] [INFO] log MCP Client initialized at port: 9002
+[2026-11-20T11:40:32.590Z] [WARN] log [shell-env] Shell environment did not contain a PATH variable
+[2026-11-20T11:40:32.593Z] [INFO] log Unity MCP Relay server started | Port: 9002 | Endpoints: /mcp/start-server, /mcp/stop-server, /mcp/server-status, /mcp/call-tool
+[2026-11-20T11:40:33.090Z] [INFO] log Unity client connected with ID: editor-29520-3jb8x2 (relay 1.0.12-build.100)
+[2026-11-20T11:40:33.091Z] [INFO] connection.established clientId=editor-29520-3jb8x2 port=9001
+[2026-11-20T11:40:33.156Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T11:40:33.173Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T11:40:33.265Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T11:40:33.266Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T11:40:33.277Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T11:40:33.277Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T11:40:37.255Z] [INFO] log Shutdown request received from client editor-29520-3jb8x2
+[2026-11-20T11:40:37.256Z] [INFO] log Unity client requested immediate shutdown - shutting down now, reason: Shutdown requested by client
+[2026-11-20T11:40:37.256Z] [INFO] log Shutdown: Initiating graceful shutdown: Shutdown requested by client
+[2026-11-20T11:44:08.143Z] [INFO] relay.startup port=9001 mcpClientPort=9002 editorPid=23616
+[2026-11-20T11:44:08.144Z] [INFO] log === RELAY SERVER STARTED === (unity-ai-relay v1.0.12-build.100)
+[2026-11-20T11:44:08.167Z] [INFO] log TLS trust: NODE_USE_SYSTEM_CA=on systemCAs=109 bundledCAs=118
+[2026-11-20T11:44:08.168Z] [INFO] log Starting relay server...
+[2026-11-20T11:44:08.168Z] [INFO] log Command line arguments: ["bun","B:/~BUN/root/relay_win.exe","--relay","--port","9001","--mcp-client-port","9002","--editor-pid","23616","--shutdown-delay","180","--log-dir","C:\\Users\\ences\\Documents\\aula2011\\Logs"]
+[2026-11-20T11:44:08.169Z] [INFO] log Parsed config: {"port":9001,"mcpClientPort":9002,"editorPid":"23616","shutdownDelaySeconds":180}
+[2026-11-20T11:44:08.170Z] [INFO] log Initializing relay components...
+[2026-11-20T11:44:08.170Z] [INFO] log Creating RelayEditor...
+[2026-11-20T11:44:08.181Z] [INFO] log WebSocket server started
+[2026-11-20T11:44:08.184Z] [INFO] log Relay server initialization completed
+[2026-11-20T11:44:08.184Z] [INFO] log MCP Client initialized at port: 9002
+[2026-11-20T11:44:08.190Z] [WARN] log [shell-env] Shell environment did not contain a PATH variable
+[2026-11-20T11:44:08.193Z] [INFO] log Unity MCP Relay server started | Port: 9002 | Endpoints: /mcp/start-server, /mcp/stop-server, /mcp/server-status, /mcp/call-tool
+[2026-11-20T11:44:08.665Z] [INFO] log Unity client connected with ID: editor-23616-uhwide (relay 1.0.12-build.100)
+[2026-11-20T11:44:08.665Z] [INFO] connection.established clientId=editor-23616-uhwide port=9001
+[2026-11-20T11:44:08.738Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T11:44:08.758Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T11:44:08.841Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T11:44:08.843Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T11:44:08.858Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T11:44:08.859Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T12:37:41.769Z] [INFO] log Domain reload signal received from client editor-23616-uhwide
+[2026-11-20T12:37:41.792Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:37:41.795Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:37:41.858Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:37:41.859Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:37:41.861Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T12:37:41.863Z] [WARN] connection.lost clientId=null
+[2026-11-20T12:37:41.868Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T12:37:41.877Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T12:38:13.294Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T12:38:13.296Z] [INFO] log Unity client connected with ID: editor-23616-p1oaex (relay 1.0.12-build.100)
+[2026-11-20T12:38:13.296Z] [INFO] connection.established clientId=editor-23616-p1oaex port=9001
+[2026-11-20T12:38:16.392Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T12:38:16.452Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T12:38:16.671Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T12:38:16.678Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T12:38:16.715Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T12:38:16.716Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T12:40:49.316Z] [INFO] log Domain reload signal received from client editor-23616-p1oaex
+[2026-11-20T12:40:49.316Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:40:49.317Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:40:49.326Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:40:49.326Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:40:49.327Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T12:40:49.327Z] [WARN] connection.lost clientId=null
+[2026-11-20T12:40:49.327Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T12:40:49.328Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T12:40:57.799Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T12:40:57.799Z] [INFO] log Unity client connected with ID: editor-23616-j7i5k8 (relay 1.0.12-build.100)
+[2026-11-20T12:40:57.800Z] [INFO] connection.established clientId=editor-23616-j7i5k8 port=9001
+[2026-11-20T12:40:57.917Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T12:40:57.937Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T12:40:58.050Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T12:40:58.058Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T12:40:58.071Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T12:40:58.071Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T12:41:54.917Z] [INFO] log Domain reload signal received from client editor-23616-j7i5k8
+[2026-11-20T12:41:54.917Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:41:54.917Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:41:54.925Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:41:54.926Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:41:54.926Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T12:41:54.926Z] [WARN] connection.lost clientId=null
+[2026-11-20T12:41:54.927Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T12:41:54.927Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T12:42:02.179Z] [DEBUG] log Relay->Editor communication is unblocked
+[2026-11-20T12:42:02.179Z] [INFO] log Unity client connected with ID: editor-23616-ek35xm (relay 1.0.12-build.100)
+[2026-11-20T12:42:02.180Z] [INFO] connection.established clientId=editor-23616-ek35xm port=9001
+[2026-11-20T12:42:03.342Z] [DEBUG] message.received type=gateway/providers_request
+[2026-11-20T12:42:03.357Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-11-20T12:42:03.451Z] [DEBUG] log [validate] Found Claude CLI at: C:\Users\ences\AppData\Roaming\npm\claude.cmd
+[2026-11-20T12:42:03.452Z] [DEBUG] log [provider-version] Failed to get Claude version from C:\Users\ences\AppData\Roaming\npm\claude.cmd: SystemError: spawn C:\Users\ences\AppData\Roaming\npm\claude.cmd EINVAL
+[2026-11-20T12:42:03.471Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-11-20T12:42:03.472Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-11-20T12:49:58.621Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:49:58.620Z] [INFO] log Domain reload signal received from client editor-23616-ek35xm
+[2026-11-20T12:49:58.621Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:49:58.634Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-11-20T12:49:58.635Z] [WARN] connection.lost clientId=null
+[2026-11-20T12:49:58.634Z] [DEBUG] acp.queue.pause depth=0
+[2026-11-20T12:49:58.635Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-11-20T12:49:58.636Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-11-20T12:49:58.634Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-11-20T12:52:58.636Z] [INFO] log Auto-shutdown timer fired after 180s inactivity, shutting down: Dedicated client disconnected
+[2026-11-20T12:52:58.638Z] [INFO] log Shutdown: Initiating graceful shutdown: Dedicated client disconnected

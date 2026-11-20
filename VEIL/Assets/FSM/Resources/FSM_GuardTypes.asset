@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd281dc4fbffd7c499646c9b45fcf776, type: 3}
+  m_Name: FSM_GuardTypes
+  m_EditorClassIdentifier: Assembly-CSharp::AulaFSM.Enemy.GuardTypeSettings
+  normal:
+    displayName: Normal
+    maxHealth: 100
+    speedMultiplier: 1
+    viewDistanceMultiplier: 1
+    viewAngle: 90
+    hearingRadius: 6
+    reactionMultiplier: 1
+    attackRangeBonus: 0
+    aimLead: 0
+    modelScale: 1
+    helmetColor: {r: 0.22, g: 0.25, b: 0.3, a: 1}
+  pesado:
+    displayName: Pesado
+    maxHealth: 220
+    speedMultiplier: 0.75
+    viewDistanceMultiplier: 0.95
+    viewAngle: 80
+    hearingRadius: 5
+    reactionMultiplier: 0.85
+    attackRangeBonus: 0
+    aimLead: 0
+    modelScale: 1.18
+    helmetColor: {r: 0.12, g: 0.13, b: 0.15, a: 1}
+  atirador:
+    displayName: Atirador
+    maxHealth: 90
+    speedMultiplier: 0.9
+    viewDistanceMultiplier: 1.35
+    viewAngle: 60
+    hearingRadius: 5
+    reactionMultiplier: 1
+    attackRangeBonus: 4
+    aimLead: 1
+    modelScale: 1
+    helmetColor: {r: 0.35, g: 0.28, b: 0.15, a: 1}
+  rapido:
+    displayName: "R\xE1pido"
+    maxHealth: 70
+    speedMultiplier: 1.35
+    viewDistanceMultiplier: 0.9
+    viewAngle: 100
+    hearingRadius: 7
+    reactionMultiplier: 1.4
+    attackRangeBonus: 0
+    aimLead: 0
+    modelScale: 0.9
+    helmetColor: {r: 0.55, g: 0.12, b: 0.12, a: 1}
